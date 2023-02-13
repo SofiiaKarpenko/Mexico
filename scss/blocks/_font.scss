@@ -1,0 +1,169 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../../fonts/Inter-Black.otf') format('otf');
+  }
+@font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 900;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-BlackItalic"),
+         /* Если не получилось, загрузит otf */
+         url('../../fonts/Inter-BlackItalic.otf') format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-Bold"),
+         /* Если не получилось, загрузит otf */
+         url("../../fonts/Inter-Bold.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-BoldItalic"),
+         /* Если не получилось, загрузит otf */
+         url("../../fonts/Inter-BoldItalic.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-ExtraBold"),
+         /* Если не получилось, загрузит otf */
+         url("../../fonts/Inter-ExtraBold.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 800;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-ExtraBoldItalic"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-ExtraBoldItalic.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-ExtraLight"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-ExtraLight.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 200;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-ExtraLightItalic"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-ExtraLightItalic.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter-Italic';
+    font-style: italic;
+    font-weight: 200;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-Italic"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-Italic.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-Light"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-Light.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-LightItalic"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-LightItalic.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-Medium"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-Medium.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-MediumItalic"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-MediumItalic.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-Regular"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-Regular.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-SemiBold"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-SemiBold.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-SemiBoldItalic"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-SemiBoldItalic.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-Thin"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-Thin.otf") format("otf");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-ThinItalic"),
+         /* Если не получилось, загрузит otf */
+         url("/fonts/Inter-ThinItalic.otf") format("otf");
+  }
+  @font-face {
+    font-family: "Inter-V.ttf";
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Inter-V"),
+         /* Если не получилось, загрузит ttf */
+         url("/fonts/Inter-V.ttf") format("ttf");
+  }

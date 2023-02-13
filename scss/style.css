@@ -1,0 +1,451 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+  * :-ms-input-placeholder {
+    color: #D9D9D9; }
+  * ::-moz-placeholder {
+    color: #D9D9D9; }
+  * ::placeholder {
+    color: #D9D9D9; }
+
+body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #293B2B;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto; }
+
+a {
+  text-decoration: none; }
+
+.footer__wrap {
+  height: 100%;
+  display: flex; }
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1180px; }
+
+.container-footer {
+  flex-wrap: wrap; }
+
+.button-reg {
+  position: relative;
+  padding: 5px 25px 6px 25px;
+  background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+  border-radius: 397px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center; }
+  .button-reg:hover {
+    box-shadow: 1px 4px 8px 2px #058048; }
+
+.header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  min-height: 60px;
+  background: linear-gradient(0deg, rgba(22, 26, 22, 0) -37.5%, #161A16 68%);
+  mix-blend-mode: normal; }
+  .header__logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 17px;
+    height: 26px;
+    width: 101.66px; }
+  .header__logo-footer {
+    margin-top: 10px;
+    margin-right: 100.59px; }
+  .header__signup {
+    display: flex;
+    justify-content: flex-end;
+    width: 66px;
+    height: 19px;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: underline; }
+    .header__signup a {
+      color: #FFFFFF; }
+    .header__signup .button-reg {
+      margin-top: -5px;
+      margin-left: 19px; }
+
+.promo {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293B2B 100%);
+  height: 660px; }
+  .promo__info {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    z-index: 2;
+    /*max-height: 660px;*/ }
+  .promo__info-2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 215px;
+    height: 86px;
+    background: #FFFFFF;
+    /* Text */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 25.8px 25.8px; }
+    .promo__info-2 p {
+      position: absolute;
+      font-style: italic;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      left: 84.3%;
+      top: -3%;
+      bottom: 90.93%; }
+    .promo__info-2 span {
+      font-style: italic;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 34px; }
+  .promo__info-1 {
+    display: flex;
+    align-self: end;
+    width: 400px;
+    height: 169px;
+    margin-top: 83px;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 43.5572px;
+    line-height: 53px;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+    color: #FFFFFF; }
+    .promo__info-1 p {
+      position: absolute;
+      color: #FFFFFF;
+      top: 13.24%;
+      bottom: 81.85%;
+      font-style: italic;
+      font-weight: 900;
+      font-size: 43.5572px;
+      line-height: 53px;
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6); }
+    .promo__info-1 h1 {
+      position: absolute;
+      margin-top: 100px;
+      font-style: italic;
+      font-weight: 900;
+      font-size: 56.6243px;
+      line-height: 69px;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6); }
+
+.footer__subscribe {
+  margin-top: 91px;
+  display: flex;
+  flex-direction: row; }
+.footer__subscribe button {
+  width: 980px;
+  height: 44px;
+  /* Main green */
+  background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+  border-radius: 99.1525px; }
+.footer__payments {
+  margin-top: 92px;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.button-reg span {
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.1864px;
+  line-height: 100%;
+  color: #FFFFFF; }
+
+.custom-field input {
+  width: 799px;
+  height: 40px;
+  border-radius: 84.7925px;
+  margin-left: -66px;
+  margin-top: -3.5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.1864px;
+  line-height: 100%;
+  text-indent: 24px;
+  color: #000; }
+
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../fonts/Inter-Black.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-BlackItalic"), url("../../fonts/Inter-BlackItalic.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-Bold"), url("../../fonts/Inter-Bold.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-BoldItalic"), url("../../fonts/Inter-BoldItalic.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-ExtraBold"), url("../../fonts/Inter-ExtraBold.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-ExtraBoldItalic"), url("/fonts/Inter-ExtraBoldItalic.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-ExtraLight"), url("/fonts/Inter-ExtraLight.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-ExtraLightItalic"), url("/fonts/Inter-ExtraLightItalic.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter-Italic';
+  font-style: italic;
+  font-weight: 200;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-Italic"), url("/fonts/Inter-Italic.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-Light"), url("/fonts/Inter-Light.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-LightItalic"), url("/fonts/Inter-LightItalic.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-Medium"), url("/fonts/Inter-Medium.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-MediumItalic"), url("/fonts/Inter-MediumItalic.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-Regular"), url("/fonts/Inter-Regular.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-SemiBold"), url("/fonts/Inter-SemiBold.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-SemiBoldItalic"), url("/fonts/Inter-SemiBoldItalic.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-Thin"), url("/fonts/Inter-Thin.otf") format("otf"); }
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-ThinItalic"), url("/fonts/Inter-ThinItalic.otf") format("otf"); }
+@font-face {
+  font-family: "Inter-V.ttf";
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-V"), url("/fonts/Inter-V.ttf") format("ttf"); }
+@media (min-width: 1280px) {
+  .header__logo-big {
+    display: none; }
+
+  .footer__payments-mobile {
+    display: none; } }
+@media (max-width: 1280px) {
+  .current_img {
+    width: calc(100% / 6 - 1rem); }
+
+  .header__logo-big {
+    display: none; } }
+@media (max-width: 992px) {
+  .container {
+    position: relative;
+    max-width: 319.67px;
+    justify-content: center; }
+
+  .header {
+    min-height: 40px; }
+    .header__logo {
+      margin-top: 11px;
+      margin-right: 162.62px;
+      width: 70.38px;
+      height: 18px; }
+    .header__logo-footer {
+      display: none; }
+    .header__logo-big {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 43px;
+      width: 101.66px;
+      height: 26px; }
+    .header__signup-login {
+      display: none; }
+    .header__signup {
+      margin-top: 13.67px;
+      width: 86.67px;
+      height: 22px;
+      text-decoration-line: none; }
+
+  .promo {
+    justify-content: center;
+    min-height: 800px; }
+    .promo__info {
+      width: 100%;
+      top: 40px;
+      justify-content: center; }
+
+  .promo__info-1 {
+    position: absolute;
+    align-self: flex-start;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 221.49px;
+    height: 93.32px;
+    margin-top: 50px;
+    font-size: 24.0958px;
+    line-height: 29px; }
+    .promo__info-1 span {
+      right: 0%;
+      font-size: 24.0958px;
+      line-height: 39px; }
+    .promo__info-1 h1 {
+      margin-top: 55.32px;
+      font-size: 31.3245px;
+      line-height: 38px; }
+
+  .promo__info-2 {
+    position: absolute;
+    width: 211px;
+    height: 26px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .promo__info-2 p {
+      color: #293B2B;
+      width: 149px;
+      height: 15px;
+      margin-top: 6px;
+      font-size: 10.3256px;
+      line-height: 12px;
+      text-align: center;
+      left: 32px; }
+      .promo__info-2 p br {
+        display: none; }
+    .promo__info-2 span {
+      width: 149px;
+      height: 15px;
+      margin-top: 5px;
+      font-size: 10.3256px;
+      line-height: 12px;
+      left: 40%; }
+
+  .button-reg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10.6667px;
+    line-height: 13px;
+    font-weight: 500;
+    width: 86.67px;
+    height: 22px;
+    position: relative;
+    padding: 5px 25px 6px 25px; }
+    .button-reg:hover {
+      box-shadow: 1px 4px 8px 2px #058048; }
+
+  .footer__subscribe {
+    margin-top: 42px;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .footer__subscribe button {
+    width: 320px;
+    height: 32px;
+    justify-content: flex-end; }
+  .footer__payments-desktop {
+    display: none; }
+  .footer__payments {
+    margin-top: 46px;
+    margin-bottom: 42.23px; }
+
+  .custom-field input {
+    position: absolute;
+    display: flex;
+    left: 0px;
+    top: 0px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 222px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 59.7402px;
+    font-size: 12.1086px; }
+
+  .button-reg span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    font-size: 12.1086px;
+    line-height: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

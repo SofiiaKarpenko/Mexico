@@ -1,0 +1,41 @@
+.header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    min-height: 60px;
+    background: linear-gradient(0deg, rgba(22, 26, 22, 0) -37.5%, #161A16 68%);
+    mix-blend-mode: normal;
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 17px;
+        height: 26px;
+        width: 101.66px;
+    }
+    &__logo-footer {
+        margin-top: 10px;
+        margin-right: 100.59px;
+    }
+    &__signup {
+        display: flex;
+        justify-content: flex-end;
+        width: 66px;
+        height: 19px;
+        margin-top: 20px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        text-decoration-line: underline;
+        a {
+            color: #FFFFFF;
+        }
+        .button-reg {
+            margin-top: -5px;
+            margin-left: 19px;
+        }
+
+    }
+}
