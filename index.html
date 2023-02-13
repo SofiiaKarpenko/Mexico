@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+    <title>Mexico Landing Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">      
+        <a href="#" class="header__logo">
+            <img src="img/Logo.svg" alt="logo" />
+        </a>
+        <div class="header__signup">
+            <a href="#" class="header__signup-login">Acceder</a>
+            <a href="#" class="header__signup-reg"><button class="button-reg">Regístrate</button></div></a>
+        </div>
+        </div>
+    </header>
+    
+    <main class="promo">
+        <div class="container">
+        <section class="promo__info">
+            <div class="promo__info-1">Bono de primer<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;depósito hasta<h1>40 000 MXN</h1></div>
+            <div class="promo__info-2"><p>Deposito minimo <br><span>500 MXN</span></p></div>
+        </section>
+        </div>
+<!--slider-->
+
+    <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+      <div class="itc-slider__wrapper">
+        <div class="itc-slider__items">
+          <div class="itc-slider__item">
+            <picture>
+                <source srcset="img/bannerBG_mobile.png" media="(max-width: 992px)">   
+            <img src="img/bannerBG.png" alt="banner">
+            </picture>
+
+            <div class="container">
+            <div class="itc-slider__offer">
+            <article class="itc-slider__descr"><span>COMBOBOOST&nbsp;</span>
+                <br>hasta el 100%
+                <br>en apuestas combinadas</article>
+                <a href="#" class="promo__signup-reg"><button class="button-reg">Regístrate</button></a>
+            </div></div>
+            <!-- Контент 1 слайда -->
+          </div>
+            <!--Контент 2 слайда тест-->
+            <div class="itc-slider__item">
+                <picture>
+                    <source srcset="img/bannerBG(1)_mobile.png" media="(max-width: 992px)">   
+                <img src="img/bannerBG(1).png" alt="banner">
+                </picture>
+    
+                <div class="container">
+                    <div class="itc-slider__offer">
+                <article class="itc-slider__descr">Reembolso del 500% en apuestas deportivas</article>
+                    <a href="#" class="promo__signup-reg"><button class="button-reg">Regístrate</button></a>
+                </div></div>
+            <!-- Контент 2 слайда -->
+          </div>
+        </div>
+      </div>
+      <button class="itc-slider__btn itc-slider__btn_prev"></button>
+      <button class="itc-slider__btn itc-slider__btn_next"></button>
+    </div>
+<!--end slider-->  
+    </main>
+    <footer class="footer__wrap">
+        <div class="container container-footer">
+        <section class="footer__subscribe">
+                <a href="#" class="header__logo header__logo-footer">
+                    <img src="img/Logo.svg" alt="logo" />
+                </a>
+                  <button class="button-reg"><label class="custom-field">
+                    <input type="email" placeholder="Correo electronico"/>
+                  </label><span>Suscríbete</span></button>
+            
+        </section>
+        <section class="footer__payments">
+            <img src="icons/paymentsystems_mobile.png" usemap="#map" alt="payments" class="footer__payments-mobile"/>
+            <img src="icons/payment systems.png" usemap="#map" alt="payments" class="footer__payments-desktop"/>
+            <map name="map"> <area shape="poly" alt="Visa" 
+                coords="0,3, 0,23, 63,3, 63,23" href="https://www.visa.com" target="_blank">
+                <area shape="poly" alt="Mastercard" 
+                coords="142,2, 142,24.54, 156,2, 156,24.54" href="https://www.mastercard.us/" target="_blank">
+                <area shape="poly" alt="Amex" 
+                coords="258,5, 258,22, 335,5, 335,22" href="https://www.americanexpress.com/" target="_blank">
+                <area shape="poly" alt="AstroPay" 
+                coords="" 
+                href="https://astropay.com/">
+                <area shape="poly" alt="Skrill" 
+                coords="" 
+                href="https://www.skrill.com/">
+                <area shape="poly" alt="PaySafeCard" 
+                coords="" 
+                href="">
+                <area shape="poly" alt="ecoPayz" 
+                coords="" 
+                href="">
+                <area shape="poly" alt="Bitcoin" 
+                coords="" 
+                href="#">
+                <area shape="poly" alt="Litecoin" 
+                coords="" 
+                href="#">
+                <area shape="poly" alt="Ethereum" 
+                coords="" 
+                href="#">
+                <area shape="poly" alt="Ripple" 
+                coords="" 
+                href="#">
+                <area shape="poly" alt="Tether" 
+                coords="" 
+                href="#">
+                <area shape="poly" alt="Cardano" 
+                coords="" 
+                href="#">
+                <area shape="poly" alt="Binance" 
+                coords="" 
+                href="#">
+                <area shape="poly" alt="USDCoin" 
+                coords="" 
+                href="#">
+              </map>
+        </section>
+        <a href="#" class="header__logo header__logo-footer header__logo-big">
+            <img src="img/Logo.svg" alt="logo" />
+        </a>
+    </div>
+    </footer>
+<script src="js/itc-slider.js"></script>
+</body>
+</html>

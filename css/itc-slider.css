@@ -1,0 +1,264 @@
+/**
+ * ItcSlider
+ * @version 1.0.0
+ * @author https://github.com/itchief
+ * @copyright Alexander Maltsev 2020 - 2022
+ * @license MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+ * @tutorial https://itchief.ru/javascript/slider
+ */
+
+ .itc-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293B2B 100%);
+  }
+  
+  .itc-slider__wrapper {
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .itc-slider__items {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+    will-change: transform;
+  }
+  
+  .itc-slider__transition-none {
+    transition: none;
+  }
+  
+  .itc-slider__item {
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    user-select: none;
+    will-change: transform;
+  }
+  .itc-slider__item img {
+    width: 100%;
+    height: 100%;
+  }
+  .itc-slider__item picture:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(41, 59, 43, 0.35),
+        rgba(41, 59, 43, 0.35)
+      ),
+      radial-gradient(
+        58.29% 46% at 50% 54%,
+        rgba(41, 59, 43, 0) 50.26%,
+        #293b2b 100%
+      );
+    z-index: 1;
+  }
+  
+  .itc-slider__offer {
+    position: absolute;
+    z-index: 2;
+    width: 386px;
+    height: 114px;
+
+    top: 51.81%;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  .itc-slider__offer button {
+    overflow: hidden;
+    width: 430px;
+    height: 80px;
+    margin-top: 29px;
+
+    background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+    box-shadow: 0px 5px 13px -14px rgba(41, 59, 43, 0.5);
+    border-radius: 100px;
+  
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    /* identical to box height, or 54px */
+
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+
+  }
+  .itc-slider__item button:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 200px;
+    margin-left: 50px;
+    background: #fff;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0.5) 100%
+    );
+    left: -40px;
+    top: -90px;
+    z-index: 1;
+    transform: rotate(45deg);
+    position: absolute;
+    animation: movingFlare 3s ease-in-out 2s infinite;
+  }
+   
+  @keyframes movingFlare {
+    0% {
+      left: -30px;
+      margin-left: 0px;
+    }
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+    100% {
+      left: 110%;
+      margin-left: 80px;
+    }
+  }
+  
+  /* кнопки влево и вправо */
+  .itc-slider__btn {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    background: #D9D9D9;
+    border-radius: 1010px;
+    text-align: center;
+    border: none;
+    transform: translateY(-250%);
+    cursor: pointer;
+    background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+    border-radius: 1010px;
+    z-index: 1;
+  }
+  
+  .itc-slider__btn_hide {
+    display: flex;
+    background: #D9D9D9;
+    border-radius: 1010px;
+  }
+  
+  .itc-slider__btn_prev {
+    left: 48.5%;
+  }
+  
+  .itc-slider__btn_next {
+    right: -48.5%;
+  }
+  
+  .itc-slider__btn:hover,
+  .itc-slider__btn:focus {
+    color: #fff;
+    text-decoration: none;
+    /* background: rgb(0 0 0 / 30%);*/
+    outline: 0;
+  }
+  
+  .itc-slider__btn::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+  
+  /*.itc-slider__btn_prev::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+  
+  .itc-slider__btn_next::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }*/
+  
+  /* индикаторы */
+  .itc-slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    margin: 0 15%;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .itc-slider__indicator {
+    flex: 0 1 auto;
+    box-sizing: content-box;
+    width: 30px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: rgb(255 255 255 / 50%);
+    background-clip: padding-box;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    cursor: pointer;
+  }
+  
+  .itc-slider__indicator_active {
+    background-color: rgb(255 255 255 / 90%);
+  }
+
+  @media  (max-width: 992px) {
+    .itc-slider {
+      height: 100%;
+    }
+    .itc-slider__offer {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          bottom: 593px;
+          width: 263px;
+          height:98.93px;
+          font-size: 15.7428px;
+          line-height: 120%;
+      }
+    .itc-slider__descr {
+      height: 49px;
+      text-align: center;
+    }
+    .itc-slider__offer button {
+        font-size: 22.0186px;
+        width: 263px;
+        height: 48.93px;
+        margin-top: 0px;
+        box-shadow: 0px 3.05814px 7.95116px -8.56279px rgba(41, 59, 43, 0.5);
+      }
+    .itc-slider__descr br {
+      display: none;
+    }
+  .itc-slider__item img {
+      width: 100%;
+    }
+  .itc-slider__item picture:after {
+    background: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(49.2% 38.83% at 50% 55.08%, rgba(41, 59, 43, 0) 23.4%, #293B2B 100%);
+  }
+  .itc-slider__btn {
+    display: none;
+  }
+  }
